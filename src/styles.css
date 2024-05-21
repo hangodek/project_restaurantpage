@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+header > nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    color: hsla(0, 0%, 100%, 0.779);
+}
+
+header > nav > li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* */
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    background-image: url(./assets/restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ee1212b3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card1 > h1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 80px;
+}
+
+#content {
+    height: 300px;
+    padding: 20px;
+}
+
+#content > h1 {
+    font-style: italic
+}
+
+#content > .contentText {
+    background-color: hwb(0 74% 23%);
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 200px;
+}
+
+#content > .contentText > blockquote {
+    margin-left: 30px;
+    margin-top: 30px;
+}
