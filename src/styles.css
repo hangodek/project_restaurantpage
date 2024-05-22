@@ -28,11 +28,13 @@ header > nav > li:hover {
 
 /* */
 
+
 .card1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 500px;
+    width: 100%;
     background-image: url(./assets/restaurant.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,12 +43,34 @@ header > nav > li:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.card1 > h1 {
+.card1 > .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card1 .title > h1 {
     text-align: center;
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
     font-size: 80px;
+}
+
+.card1 > .title > h1 {
+    animation: cardKey 700ms ease-in-out forwards;
+}
+
+@keyframes cardKey {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 #content {
