@@ -1,6 +1,8 @@
 import './styles.css';
 import loadPage from './pageload.js';
 import pageMenu from './pageMenu.js';
+import pageAbout from './pageAbout.js';
+import pageContact from './pageContact.js';
 
 const myContent = document.querySelector("#content");
 const homeBtn = document.querySelector("#home");
@@ -10,8 +12,8 @@ const contactBtn = document.querySelector("#contact");
 
 homeBtn.addEventListener("click", loadPage);
 menuBtn.addEventListener("click", pageMenu);
-aboutBtn.addEventListener("click", loadPage);
-contactBtn.addEventListener("click", loadPage);
+aboutBtn.addEventListener("click", pageAbout);
+contactBtn.addEventListener("click", pageContact);
 
 
 
